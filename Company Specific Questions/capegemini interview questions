@@ -1,0 +1,1616 @@
+Question 1:
+Do you have any technical certifications?
+
+Explanation:
+If you have listed certifications in your resume, the interviewer will ask this question.
+Describe the certifications in detail, including your training, projects, seminars, webinars etc.
+List only those certifications that are relevant to the job. And co-relate how your certification can help in the job.
+
+
+Question 2:
+What is the extent of your technical expertise?
+
+Explanation:
+You have to rate your technical skills.
+The interviewer wants to check how in touch you are with the current technologies.
+Mention the technologies you have worked with, and how good you are with them.
+Additionally mentioning technologies like ML, AL, AWS etc which are the most sought after technologies right now will earn you more points.
+However do not lie, cause they will cross check your answers.
+
+
+
+Question 3:
+What do you do to improve your technical skills?
+
+Explanation:
+An employee who is always striving to better themselves, is a valuable asset.
+The interviewer wants to know how you have tried to better yourself and skills.
+Mention methods like :-
+
+Reading technical books and journals. (mention the names of a few)
+Attend online webinars and tutorials regarding the skills.
+Build a git-hub profile(show your projects to the interviewer)
+Learning new tools
+
+
+Question 4:
+Give an example of how you apply your technical knowledge in a practical way?
+
+Explanation:
+This is a behavioral interview type question.
+You can follow the STAR method to answer questions of this type.
+Follow the framework and explain how you have applied your technical skills in any project or product. How you did it and what were the results.
+
+Question 5:
+What was the recent technical project you worked on? What were your key responsibilities?
+
+Explanation:
+This is a behavioral interview type question.
+If you have worked on a project that used the same technologies that were mentioned in the job description/eligibility criteria, try to mention that.
+Else you can mention any other project.
+Use the STAR method to answer questions of this type.
+If the interviewer has mentioned a specific part like your responsibilities, or the challenges you faced, describe that part with more emphasis.
+
+
+Question 6:
+What is the production deployment process you follow?
+
+Explanation:
+Deployment is the step by step process of making an application ready.
+It varies from individual to individual and organization to organization.
+Some of the common models are Waterfall Model, Iterative Model, Agile Model etc.
+You can follow one of these, or if you have your own mix you can talk about that.
+Explain your thought process to the interviewer.
+Question 7:
+What do you like most about the IT industry? What do you enjoy the least about it?
+
+Explanation:
+Mention the features of IT that you like.
+For instance you can mention that being able to work with emerging technologies is your favorite feature.
+Also mention the aspects that you wish would change.
+
+
+Question 8:
+Why is a solution design document important?
+
+Explanation:
+Solution design document is a document on which the details of a project are written before its implementation.
+It's an important document to communicate the technical details of the plan to a team.
+It also helps organize one's thoughts before you start working on the project.
+
+
+Question 9:
+Whenever you solve a problem, who do you keep in mind? The end-user, the business, or yourself, and why?
+
+Explanation:
+The aim of any product is to be of service to someone.
+It could be the user, the company or the creator.
+Mention who you think is the one of service.
+Explain who is the main benefactor for the product developed by you.
+
+
+Question 10:
+How many programming languages do you know?
+
+Explanation:
+Whatever languages you have mentioned in your resume, tell them here.
+Sometimes interviewers will ask you to rate yourselves, in the languages you mentioned.
+Do not rank yourself very high like a 9, because they might ask you advanced level questions which if you are unable to answer will create a negative impression.
+Whichever language you rate yourself highest in the follow up questions will be mostly from there only.
+They will also ask questions as to why you prefer that language in particular or why you are stronger there.
+
+
+
+Question 11:
+What is the use of printf() and scanf() functions?
+
+Explanation:
+printf() function displays integer, character, float or string values on the screen.
+%d-displays an integer value
+%s-displays a string
+%c-displays a character value
+%f-displays a floating value.
+scanf() function takes input from the user.
+
+
+Question 12:
+What is the static variable? What is its use?
+
+Explanation:
+A variable which is declared static, is known as a static variable. These variables are able to retain its value between multiple function calls.
+
+Syntax:
+
+static int y=10;//static variable
+
+Static variables are used because these variables can be accessed from anywhere in the program.
+
+Static variables are used as common values and are shared by all the methods.
+
+Question 13:
+What is the difference between call by value and call by reference in C?
+
+Explanation:
+ 	
+Call by Value
+
+Call by Reference
+
+Description
+
+When a copy of the variable is passed to the function, the original value remains unchanged.
+
+When a copy of the value is passed to the function, the original value gets changed.
+
+Memory location
+
+Formal arguments and actual arguments are created in separate locations in the memory.
+
+Formal arguments and actual arguments are created in the same locations in the memory.
+
+Safety
+
+Actual arguments are reliable as they cannot be modified.
+
+Actual arguments are not reliable as they can be modified
+
+Question 14:
+What is Recursion in C?
+
+Explanation:
+Recursion is the process where a function calls itself. This function is known as a recursive function. There are 2 phases of recursion:-
+
+Winding phase - when a recursive function calls itself, this phase reaches its end when the condition is fulfilled.
+Unwinding phase - when the condition is fulfilled, this phase starts and the control is returned to the original call.
+Question 15:
+What is a pointer in C? What are its uses?
+
+Explanation:
+A pointer is a variable referring to the address of a value. When a variable is declared inside a program, the system allocates some memory to it. This memory contains an address number. The variables that hold this address number are called pointer variables.
+
+Syntax: Data_type *p;
+
+P is a pointer variable holding the address number of data_type value.
+
+  Uses of Pointer:-
+
+Pointers are used in accessing elements through an array.  Pointers are used to pass a reference of a variable to another function.
+
+Question 16:
+What is a NULL pointer and far pointer?
+
+Explanation:
+Null Pointer - Null pointer is a pointer that does not refer to any address of value but to NULL.  When "0" is assigned to a pointer of any type, it creates a Null pointer.
+Far Pointer - A far pointer is a pointer that can access all the 16 segments, i.e. the whole residence memory of the RAM.  It is a 32 bit pointer that obtains information from outside the memory in a given section.
+Question 17:
+What is a dangling pointer? How is it overcome?
+
+Explanation:
+Dangling pointer is a problem that arises when an object is deleted without modifying the value of the pointer. Thus the pointer is now pointing to a deallocated memory.
+
+In other words, if a pointer say A is pointing to a memory location, but another pointer B deletes the memory occupied by A while A is still pointing to that location, A becomes a dangling pointer.
+
+The problem is overcome by assigning a NULL value to the dangling pointer.
+After de-allocating the memory from a pointer variable, the pointer is assigned to a NULL value.
+Thus the pointer is not pointing to any memory location, therefore it's no longer a dangling pointer.
+Question 18:
+What is an infinite loop?
+
+Explanation:
+A loop running continuously for an indefinite number of times is called the infinite loop.
+
+Question 19:
+What is a command line argument?
+
+Explanation:
+The argument passed to the main() function while executing the program is known as a command line argument.
+
+Question 20:
+Can we compile a program without the main() function?
+
+Explanation:
+We can compile a program without the main() function, however the program won’t be executed. However adding #define, we can compile and run the program without using the main() function.
+
+Question 21:
+What is an object and class?
+
+Explanation:
+Object - It is a collection of methods and classes which represent its state and execute operations.
+Class - It is used to define new types of data which is then used to create objects.
+Question 22:
+What do you mean by JVM, JDK and JRE?
+
+Explanation:
+JVM - Java Virtual Machine. Offers runtime environment for cods to be executed.
+JRE - Java Runtime Environment. It's the collection of files that are needed during runtime by JVM.
+JDK - Java Development Kit. It is a kit which contains the tools necessary to write and execute a program.
+Question 23:
+How can you restrict inheritance?
+
+Explanation:
+By the following methods:
+
+Using the final keyword.
+Making the method final.
+Using private constructor.
+Using (//) Javadoc comment
+Question 24:
+What are static methods and static variables?
+
+Explanation:
+They are methods and variables shared by all the objects in a class. Their static nature comes from the class and not from the object itself.
+
+Question 25:
+What is enumeration?
+
+Explanation:
+It is an interface you can use to access original data structure.
+
+Question 26:
+What is the use of ‘this’ keyword in JAVA?
+
+Explanation:
+‘this’ keyword is used to refer to a current object, to invoke the current class method or class constructor.
+
+It is also used to pass on as an argument into methods or constructors.
+
+Question 27:
+What is the final variable?
+
+Explanation:
+In Java, the  final variable is used to restrict the users from updating the variable.  The final variable once assigned can not be changed after that.
+
+Question 28:
+Why is JAVA platform independent?
+
+Explanation:
+Java is platform independent because of its byte codes which can run on any system regardless of its operating systems.
+
+Question 29:
+What are access modifiers in Java?
+
+Explanation:
+Access modifiers are special keywords that can restrict the access of a class, constructor, data member and method in another class. They are of 4 types:-
+
+Default
+Private
+Protected
+Public.
+Question 30:
+What is method overloading?
+
+Explanation:
+It is a polymorphism technique that allows us to create multiple methods with the same name but different signatures.
+
+Question 31:
+What is interpreted language?
+
+Explanation:
+An interpreted language executes its statements line by line. Interpreted language codes can run directly from the source code with no intermediary compilation step.
+
+Question 32:
+What are lists and tuples?
+
+Explanation:
+Lists and tuples are sequence data types.  The objects stored in both the sequences can have different data types.
+
+List are represented by square brackets [“”,’’]
+Tuples are represented by round brackets (“”,””)
+The difference between the two is that lists are mutable while tuples are immutable. Which means that lists can be modified while tuples can not be modified.
+Question 33:
+What is pass in Python?
+
+Explanation:
+Pass keyword represents a null operation in python. Used for the purpose of filling up empty block code which may execute during runtime, but are yet to be written
+
+Question 34:
+What is self in Python?
+
+Explanation:
+Self is a keyword that defines an instance of an object of a class. It is explicitly used as the first parameter.
+
+Question 35:
+What is slicing in Python?
+
+Explanation:
+Slicing is used to break up a list or tuple.
+
+Start: it is the starting index from where the list is sliced
+Stop: It is the ending index where the list is stop
+Step: It is the number of steps to jump
+Syntax:
+
+[start:stop:step]
+
+Question 36:
+What is the use of break statement?
+
+Explanation:
+It is used to terminate the execution of the current loop.
+Break statement, breaks the current execution and transfer control to outside the current block.
+Question 37:
+What is an operator in Python?
+
+Explanation:
+Operator is a symbol, which is used on some values and produces an output as a result. Operator works on operands.
+
+Operators are of unary, binary or ternary types depending on the number of operands required.
+
+They include:-
+
+Arithmetic
+Relational
+Assignment
+Logical
+Identify
+Bitwise
+Question 38:
+What is swapcase() function in Python?
+
+Explanation:
+It is a string function which converts all uppercase characters into lowercase and vice versa.
+It is used for altering the existing case of the string.
+This method creates a copy of the string which contains all the characters in the swap case.
+Question 39:
+What is the  Python decorator?
+
+Explanation:
+It is a powerful tool that allows you to add functionality in an existing code. It is also known as meta-programming.
+
+Question 40:
+What is the difference between Python Arrays and lists?
+
+Explanation:
+                    ARRAYS
+
+                        LISTS
+
+Contains elements of the same data types.
+
+Contains elements of different data types.
+
+Consumes far less memory than lists.
+
+Consumes a large amount of memory
+
+Question 41:
+What is DBMS?
+
+Explanation:
+DBMS stands for Database Management System. It carries out operations like creation, maintenance and use of a database.
+
+Question 42:
+What are tables, fields and record?
+
+Explanation:
+Tables: Data organized in a model with Rows and Columns is called a table. Rows are horizontal while tables are vertical.
+Fields: In a table there are a specified number of columns known as fields.
+Records: There are infinite number of rows which is called a record.
+Question 43:
+What is Foreign Key?
+
+Explanation:
+Foreign Key is a key which links 2 tables.
+
+It is a field or a collection of fields in a table that corresponds to the Primary Key of another table.
+
+Question 44:
+What is the difference between DELETE and TRUNCATE?
+
+Explanation:
+DELETE
+
+TRUNCATE
+
+This command will delete a row of a table.
+
+This command will delete a row of a table.
+
+Rollback of data is not possible.
+
+Rollback of data is possible.
+
+It is a DML command.
+
+It is a DDL command.
+
+It is comparatively slower.
+
+It is comparatively faster.
+
+Question 45:
+What is a constraint?
+
+Explanation:
+Constraints are limitations on the data type of a given table. Samples of constraints are:
+
+Not Null
+Check
+Default
+Question 46:
+What is ACID property in a database?
+
+Explanation:
+Atomicity - It states each transaction is all or nothing. If one part of the transaction fails, the entire transaction fails.
+Consistency - It states that data must follow all validation rules. A transaction never leaves the database without being completed.
+Isolation - Isolation provides concurrency control. It ensures that concurrent property of execution should not be met.
+Durability - Once a transaction is committed it will remain committed regardless of the situation, power loss, crashes etc.
+Question 47:
+What is SQL?
+
+Explanation:
+SQL stands for Structured Query Language and is used to communicate with the Database. It is a standard language for accessing and manipulating databases.
+
+Question 48:
+What is a unique key?
+
+Explanation:
+A Unique key constraint identifies each record in the database. It provides for the column or set of columns.
+A unique key is a set of one or more than one field of a table that can uniquely identify a record in a database table.
+Question 49:
+What is a relationship and what are they?
+
+Explanation:
+Relationship is the interconnection of tables within the database. There are various relationships,
+
+One to One Relationship.
+One to Many Relationship.
+Many to One Relationship.
+Self-Referencing Relationship.
+Question 50:
+What is a query?
+
+Explanation:
+A query is really a request for data. A DB query is a code written in order to get the information back from the database. You ask the database for something and it answers in the best way it knows with data as a result of a query.
+
+Question 51:
+What is Machine Learning?
+
+Explanation:
+Machine Learning is the science of getting computers to act in a real-time situation without being programmed explicitly. It is an application of AI and it enables systems to learn automatically and to improve from previous experience.
+
+Question 52:
+What is Supervised, Unsupervised and Semi-Supervised learning?
+
+Explanation:
+Supervised learning - The model is trained on labeled data, and then it predicts based on the labeled data, Therefore it requires a supervisor to train the data.
+Unsupervised learning - The model is trained on unlabeled data. The model tries to find patterns and relationships in the data and classify them accordingly.
+Semi-Supervised Learning - It uses some amount of labeled data and a large amount of unlabeled data. The goal is to classify unlabeled data with the help of labeled data.
+Question 53:
+What are training set and test set in Machine Learning and why are they important?
+
+Explanation:
+Training set is a set given to the model for training, analyzing and learning.
+Test set is a set used for testing the model locally before using it in a real time application.
+Question 54:
+Explain the stages of building a Machine Learning model.
+
+Explanation:
+Data Collection: Appropriate data is collected using either some algorithm or manually.
+Data Processing: The collected data is processed by handling all the null values, categories etc.
+Model Building: The algorithms to create the model is decided and built.
+Model Evaluation: The model is evaluated using techniques such as accuracy score, z score etc.
+Model Saving and Testing: The model is saved for future use and real time testing is done.
+Question 55:
+How does IoT work?
+
+Explanation:
+Iot is built on the concept of AI. An IoT device has a sensor which collects data, the cloud facilitates the network between the devices, the software processes and stores the data and finally the UI enables the device to respond to the stimulation.
+
+Question 56:
+What is Natural Language Processing?
+
+Explanation:
+Natural language processing is a branch of Artificial Intelligence that deals with the conversion of Human Language to Machine Understandable language, so it can be processed by Machine Learning models.
+
+Question 57:
+What is IIOT?
+
+Explanation:
+IIOT(Industrial Internet of Things) are large scale IoT structures or systems that are used at the industrial level.
+
+Question 58:
+What is Deep Learning?
+
+Explanation:
+Deep Learning is a subset of machine learning. It is a neural network with multiple layers, which creates a stimulation of the human brain, allowing the model to lean from large amounts of data.
+
+Question 59:
+What is Arduino?
+
+Explanation:
+It is an open source electronics platform based on easy-to-use hardware and software. Arduino boards can read input and turn it into an output.
+
+Question 60:
+What is Neural Network?
+
+Explanation:
+Neural Network is a replication of the firing of neurons in our brain, which facilitates learning, although on a less complex scale.
+
+Question 61:
+What do you mean by Open-source Hardware?
+
+Explanation:
+Open source hardware is similar to open source software.
+Ardunio is open source. The source code for which the Java environment is released under the GPL and C/C++ is under LGPL.
+Question 62:
+What is Raspberry Pi?
+
+Explanation:
+Raspberry Pi is a microcomputer that can be connected to a peripheral device. We can execute a number of tasks in a Raspberry Pi including, creating spreadsheets,  coding, games etc.
+
+Question 63:
+How is Raspberry Pi used in IoT?
+
+Explanation:
+Raspberry Pi is a platform to develop many IoT based applications. IoT requires a network of devices and software to connect and exchange data. Raspberry Pi can provide this platform for it.
+
+Question 64:
+List any two real-life applications of Natural language processing.
+
+Explanation:
+Google Translate
+Chat bots
+Siri, Alexa
+Question 65:
+What is Ethical Hacking?
+
+Explanation:
+Ethical Hacking is when a person is allowed to hack the system with the permission of the owner to find any bug in the system and to fix it.
+
+Question 66:
+What is the difference between IP and MAC address?
+
+Explanation:
+IP Address -  IP address is assigned to a device so that it can be located on the network.
+MAC Address - MAC Address is a unique serial number assigned to every network interface on every device.
+Question 67:
+Explain LAN
+
+Explanation:
+LAN or Local Area Network is used to connect devices such that they are able to share resources and exchange information. LAN is of two types, wireless LAN and wired LAN.
+
+Question 68:
+What is VPN?
+
+Explanation:
+VPN or Virtual Private Network is a private Wide Area Network built on the Internet. It allows the creation of a secured tunnel between different networks using the internet. VPN allows a client to connect to a network remotely.
+
+Question 69:
+What are Private and Special IP addresses?
+
+Explanation:
+Private Address: These are specific IPs that are reserved specifically for private use only. These are non rout-able and cannot be used by the devices on the internet.
+Special Address: IP Range from 127.0.0.1 to 127.255.255.255 are network testing addresses also known as loop-back addresses. These are the special IP addresses.
+Question 70:
+What is DNS?
+
+Explanation:
+DNS is the Domain Name System. It basically translates the domain name of their corresponding IPs. It uses port 53 by default.
+
+Question 71:
+What is the main purpose of an OS? What are the different types of OS?
+
+Explanation:
+The function of an OS is to execute user programs and make it easier for the users to interact with the system. It is designed to ensure that the system performs better by managing all computational activities.
+
+Types of OS:
+
+Batched OS (Example: Payroll System, Transactions Process, etc.
+Multi-Programmed OS (Example: Windows O/S, UNIX O/S, etc.)
+Timesharing OS (Example: Multics, etc.
+Distributed OS (LOCUS, etc.)
+Real-Time OS (PSOS, VRTX, etc.)
+Question 72:
+What is GUI?
+
+Explanation:
+GUI or Graphical User Interface is an interface that allows users to use graphics to interact with the OS. Its function is to make the OS more user friendly and less complex.  Instead of having to memorize commands, users can just click on a button and execute the procedure.
+
+Question 73:
+What do you mean by RTOS?
+
+Explanation:
+Real Time Operating System of RTOS is a type of OS used for real time applications. It is used for tasks that are needed to be executed within a short period of time. It's designed for applications where data processing should be done in a fixed and small measure of time.
+
+Question 74:
+Name some of the most famous OS.
+
+Explanation:
+MS-Windows
+Ubuntu
+Mac OS
+Fedora
+Solaris
+Free BSD
+Chrome OS
+CentOS
+Debian
+Android
+Question 75:
+What is IPC?
+
+Explanation:
+IPC or Interprocess Communication is a mechanism that requires the use of resources like memory that is shared between processes or threads. With IPC, the OS allows different processes to communicate with each other.  It is simply used for exchanging data between multiple threads in one or more programs or processes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Capgemini Top 20 Questions
+
+Notesicon
+Question 1:
+What is a loop? What is a nested loop?
+
+Answer:
+Loop: A loop is a set of commands or instructions that will be executed continuously either for an infinite number of times or until a condition is met.Once the condition is fulfilled the loop breaks.
+Nested Loop: A loop inside another loop is known as a nested loop. In a nested loop there is an outer loop, and an inner loop.
+Question 2:
+What is Data Structure?
+
+Answer:
+Data Structure is a way to organize data in memory. Data Structure is of two types:
+
+Primitive data types
+Non Primitive data types
+Question 3:
+What is RDBMS?
+
+Answer:
+Relational Database Management System or RDBMS are softwares that are used to manage relational databases. These databases are commonly used by organizations and corporations as opposed to hierarchical databases, due to its ability to handle large volumes of data and complex queries.
+
+Example: MYSQL, Oracle, IBM DB2 etc.
+
+Question 4:
+What are the features of an array?
+
+Answer:
+It contains elements of the same datatype.
+Arrays are un initialized by default.
+Arrays are saved contiguously in memory
+Arrays are one-dimensional or two-dimensional.
+Question 5:
+What is Polymorphism?
+
+Answer:
+It is the property by which a single action can be performed in multiple ways. It is an important OOPS concept.
+
+Question 6:
+What is multilevel inheritance?
+
+Answer:
+Multilevel Inheritance is a type of inheritance where a child class can inherit from a parent class and in turn this child class acts as a parent class for another child class.
+
+Question 7:
+What is UNION in SQL? How is it different from UNION ALL?
+
+Answer:
+UNION is used to combine two queries into a single result set using select statement.
+
+It differs from UNION ALL in the sense that UNION ALL keeps all records including duplicate records while UNION only keeps unique records.
+
+Question 8:
+Difference between dataset.clone() and dataset.copy().
+
+Answer:
+dataset.clone()
+
+dataset.copy()
+
+It duplicates the structure of the dataset but does not copy the data.
+
+It copies both data and structure.
+
+Question 9:
+What is #pragma directive?
+
+Answer:
+#pragma directive is a directive that provides additional information to the compiler which in turn invokes or revokes certain special features depending upon the directives.
+
+Types of #pragma directive:- #pragma startup, #pragma exit, #pragma warn, #pragma GCC dependency, #pragma GCC system_header and #pragma GCC poison
+
+Question 10:
+What is scanf()?
+
+Answer:
+scanf() is a function that reads formatted data from the input stream and write the results into the arguments given.
+
+Question 11:
+What is public static void main(string[]args) in Java?
+
+Answer:
+It is the main Java method, and is the entry point of all Java programs.
+
+public:  it is the access modifier of the main method. It specifies who can access this method. The term “public” makes it available to all the classes.
+static: At the start, there is no object class present, therefore the main method is static, which makes the JVM load the class into memory and call the main method.
+void: In Java every program is required to provide a return type. However the main() method does not return anything hence its return type is void.
+main: It informs the JVM that this is the main Java method.
+string[]args: This is the java command line argument. It is an array of type java.lang.Stringclass. The name of the string array is args, and the user can rename it accordingly.
+Question 12:
+What is a JAVA string pool?
+
+Answer:
+Java string pool is a pool of strings that is stored in a memory heap. It is also known as String Intern Pool or String Constant Pool.
+
+There are two ways to create a string in JAVA:
+
+Using string literal
+Using new keyword
+Question 13:
+What is shallow copy and deep copy in JAVA?
+
+Answer:
+Shallow Copy: When a shadow copy is implemented, the copied object copies the “original” object, however it does not copy the inner objects.
+
+If the original object contains a reference variable, then the copied object will refer to the same object to which the original was referring to. Therefore a change in the original object will reflect the same in the shallow copy.
+
+Therefore the shallow copy is dependent on the original object.
+
+Deep Copy: When a deep copy is implemented, the copied object copies the original object. It also calls the clone() method which then makes copies of the references that the original object contained.
+
+Thus any change in the original will not be reflected on the deep copy making it independent of the original object.
+
+Question 14:
+What is xrange in Python?
+
+Answer:
+xrange() function is used in Python2, to generate numbers in a sequence. It is similar to the range() function which is used in Python3.
+
+Question 15:
+What is NumPy?
+
+Answer:
+NumPy is a Python library that is used in scientific computing.
+
+Question 16:
+Why should we not use arrays to implement a queue?
+
+Answer:
+It causes waste of memory as the space that is used to store queue elements cannot be reused again.
+It is complicated to decide the size of arrays before-hand, which is a requirement in array implementation.
+Question 17:
+Difference between class and structure in C++.
+
+Answer:
+Class
+
+Structure
+
+A class is a collection of related variables and functions that are contained in a single structure.
+
+A structure is a collection of variables of various data types that are referenced by the same name.
+
+Supports Inheritance
+
+Does not support inheritance
+
+Members are set to private on default
+
+Members are set to public by default
+
+Question 18:
+Difference between new() and malloc().
+
+Answer:
+new()
+
+malloc()
+
+It is an operator
+
+It is a function
+
+Memory Initialization can be done
+
+Memory Initialization cannot be done
+
+New can be overloaded
+
+Overload does not occur
+
+Question 19:
+What is DNS?
+
+Answer:
+DNS or Domain Name System is used to convert the domain names of websites to IP addresses which can be read by the system.
+
+Question 20:
+What is the dynamic host configuration protocol?
+
+Answer:
+Dynamic Host Configuration Protocol is a client/server protocol that automates the process of allocating IP addresses, subnet mask and default gateway to any device on a TCP/IP-based network. DHCP allocates as well as manages these configurations.
+
+Question 21:
+Differentiate between Primary key and Unique Key.
+
+Answer:
+Primary Key
+
+Unique Key
+
+Used to identify unique rows or records
+
+Used to identify rows which is not primary key
+
+Only one primary key
+
+Multiple unique keys
+
+Creates clustered index
+
+Creates non clustered index
+
+Question 22:
+Reserved words in JAVA.
+
+Answer:
+In Java reserved words are certain words that cannot be used as object or variable, since these words are used in the syntax of Java programs.
+
+Some of the reserved words include:- abstract, boolean, assert, break, byte etc.
+
+Question 23:
+What is memory leak in C?
+
+Answer:
+Memory leak occurs when the computer mismanages the memory allocation. Memory leaks result in efficient computer performance due to low memory.
+
+Question 24:
+Basic concepts of OOPS
+
+Answer:
+Encapsulation - It is the mechanism that binds the code to the data it manipulates. Thus the data is wrapped under a single unit.
+Abstraction - It is the process of exposing the details that are necessary and hiding the rest. The use of this process is to reduce the object to its essence such that only the necessary characteristics are exposed to the users.
+Inheritance - It is a property of JAVA through which it can acquire property of one class to another class. There is a parent class whose attributes and methods are inherited by the child class or subclass.
+Polymorphism - It is the ability of JAVA to perform the same action in many different ways. Through this property a single task can be performed in multiple ways. It is the ability of an object to take many forms.
+Question 25:
+What is SQL?
+
+Answer:
+SQL or Structured Query Language is used in managing a relational database. SQL is the language of database, and is used for extracting and organizing data in a database for analysis.
+
+Question 26:
+Difference between primary key and secondary key.
+
+Answer:
+Primary Key 
+
+Secondary Key
+
+This key is selected for identifying a unique row or record in a relation.
+
+It is selected for finding details from a large dataset.
+
+It does not allow NULL values
+
+It allows NULL values
+
+There is only one Primary Key.
+
+There can be multiple secondary keys.
+
+Question 27:
+What is cloud computing?
+
+Answer:
+Cloud computing uses the internet to store and manage data on a remote server via the internet.
+
+Question 28:
+What is HTML 5?
+
+Answer:
+HTML 5 is a markup language. It is used for creating web pages and websites. It is the fifth major HTML version recommended by W3C(World Wide Web Consortium).
+
+Question 29:
+What is the DROP, DELETE and TRUNCATE command?
+
+Answer:
+DROP: In SQL, DROP command is used to remove a table from the database. Using this command deletes all the data that was associated with the table.
+DELETE: In SQL, DELETE command is used to remove records from a table. Depending upon the condition specified, one or multiple records can be deleted.
+TRUNCATE: In SQL TRUNCATE command deletes the rows within a table however the table structure, columns, indexes etc remain unchanged.
+Question 30:
+What is FTP?
+
+Answer:
+File Transfer Protocol or FTP, is an application layer protocol in a TCP/IP based network.
+
+It is used to send files from one computer to another over the internet, by having one computer act as the server.
+
+
+
+
+
+
+
+
+
+Question 1:
+Consider an unsorted array A of size N containing only positive integers. The task is to identify a contiguous subarray whose elements sum up to a given target number S. Your objective is to determine the left and right indices (1-based indexing) of the identified subarray.
+
+Write a function or algorithm to solve this problem efficiently.
+
+Example:
+
+Input:
+
+N = 5, S = 12
+
+A[] = {1,2,3,7,5}
+
+Output: 2 4
+
+Explanation: The sum of elements 
+
+from 2nd position to 4th position 
+
+is 12.
+
+Input:
+
+N = 10, S = 15
+
+A[] = {1,2,3,4,5,6,7,8,9,10}
+
+Output: 1 5
+
+Explanation: The sum of elements 
+
+from 1st position to 5th position
+
+is 15.
+
+Question 2:
+Consider an array of distinct integers. Your task is to determine and count all triplets in the array such that the sum of two elements in the triplet is equal to the third element.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input: 
+
+N = 4 
+
+arr[] = {1, 5, 3, 2}
+
+Output: 2 
+
+Explanation: There are 2 triplets:
+
+ 1 + 2 = 3 and 3 +2 = 5
+
+ 
+
+Input: 
+
+N = 3
+
+arr[] = {2, 3, 4}
+
+Output: 0
+
+Explanation: No such triplet exits
+
+Question 3:
+You are given two sorted arrays, arr1[] and arr2[], both in non-decreasing order. The goal is to merge these arrays in sorted order without using any additional space. Additionally, modify arr1 to contain the first N elements of the merged array and modify arr2 to contain the last M elements.
+
+Write a function or algorithm to achieve this in an efficient manner.
+
+Example:
+
+Input: 
+
+n = 4, arr1[] = [1 3 5 7] 
+
+m = 5, arr2[] = [0 2 6 8 9]
+
+Output: 
+
+arr1[] = [0 1 2 3]
+
+arr2[] = [5 6 7 8 9]
+
+Explanation:
+
+After merging the two 
+
+non-decreasing arrays, we get, 
+
+0 1 2 3 5 6 7 8 9.
+
+Question 4:
+Given a string S, your task is to find the longest palindromic substring within it. A palindromic substring is defined as a substring that reads the same backward as forward. Formally, a string S is considered a palindrome if reverse(S) is equal to S. In case of multiple palindromic substrings with the same length, return the substring that occurs first (with the least starting index).
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input:
+
+S = "aaaabbaa"
+
+Output: aabbaa
+
+Explanation: The longest Palindromic
+
+substring is "aabbaa".
+
+Question 5:
+You are provided with two strings, a and b. The objective is to determine whether the string b can be obtained by rotating (in any direction) the string a by exactly 2 places.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input:
+
+a = amazon
+
+b = azonam
+
+Output: 
+
+1
+
+Explanation: 
+
+amazon can be rotated anticlockwise by two places, which will make it as azonam.
+
+Question 6:
+Given a string in roman no format (s)  your task is to convert it to an integer . Various symbols and their values are given below.
+
+I 1
+
+V 5
+
+X 10
+
+L 50
+
+C 100
+
+D 500
+
+M 1000
+
+Example:
+
+Input:
+
+s = V
+
+Output: 5
+
+Input: s = III 
+
+Output: 3
+
+Question 7:
+Given two strings, a and b, both consisting of lowercase characters, your task is to determine whether these two strings are anagrams of each other. An anagram of a string is another string that contains the same characters, with the only difference being the order of characters.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input:
+
+a = "listen"
+
+b = "silent"
+
+Output:
+
+Are Anagrams: True
+
+Explanation:
+
+The strings "listen" and "silent" are anagrams of each other as they contain the same characters.
+
+Question 8:
+Given a string S, your objective is to determine the length of the longest substring where all characters are distinct.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input:
+
+S = "abcabcbb"
+
+Output:
+
+Length of Longest Substring: 3
+
+Explanation:
+
+The longest substring with distinct characters is "abc," with a length of 3.
+
+Question 9:
+Consider a singly linked list with N nodes. Your task is to identify and print the middle node of the linked list. In the case where the number of nodes, N, is even, print the second middle element.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input: LinkedList: 1->2->3->4->5
+
+Output: 3 
+
+Explanation:  Middle of linked list is 3.
+
+Input: Linked List: 1 -> 2 -> 3 -> 4 -> 5 -> 6
+
+Output: Middle Node: 4
+
+Explanation: In this case, as N is even, the second middle element is 4.
+
+Question 10:
+Consider a linked list with N nodes. Your objective is to determine whether the linked list contains a loop. It's important to note that the linked list may include self-loops.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input: Linked List: 1 -> 2 -> 3 -> 4 -> 5
+
+Output: Contains Loop: False
+
+Explanation: The linked list doesn't contain any loops.
+
+Input: Linked List: 1 -> 2 -> 3 -> 4 -> 5 -> 2 (self-loop)
+
+Output: Contains Loop: True
+
+Explanation: In this case, the linked list contains a loop with node 2 pointing back to itself.
+
+Question 11:
+Consider a linked list with N nodes. Your task is to reverse the order of the nodes in the linked list.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input: Linked List: 1 -> 2 -> 3 -> 4 -> 5
+
+Output: Reversed Linked List: 5 -> 4 -> 3 -> 2 -> 1
+
+Explanation: The linked list has been reversed to have 5 as the new head.
+
+Question 11:
+You are given a singly linked list of size N. Your objective is to perform a left shift on the linked list by k nodes, where k is a positive integer not exceeding the length of the linked list.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input: N = 5
+
+value[] = {2, 4, 7, 8, 9}
+
+k = 3
+
+Output: 8 9 2 4 7
+
+Explanation:
+
+Rotate 1: 4 -> 7 -> 8 -> 9 -> 2
+
+Rotate 2: 7 -> 8 -> 9 -> 2 -> 4
+
+Rotate 3: 8 -> 9 -> 2 -> 4 -> 7
+
+Question 12:
+Consider an array arr[ ] of size N containing elements. Your task is to determine the next greater element for each element of the array in the order of their appearance.
+
+The next greater element for an element in the array is defined as the nearest element on the right that is greater than the current element. If there is no element to the right that is greater than the current element, then the next greater element for the current element is -1. Specifically, the next greater element for the last element in the array is always -1.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input: arr[ ] = [4, 5, 2, 10, 8]
+
+Output: Next Greater Elements: [5, 10, 10, -1, -1]
+
+Explanation:
+
+- The next greater element for 4 is 5.
+
+- The next greater element for 5 is 10.
+
+- The next greater element for 2 is 10.
+
+- The next greater element for 10 is not found, so it is -1.
+
+- The next greater element for 8 is not found, so it is -1.
+
+Question 13:
+You are required to implement a queue using two stacks, denoted as s1 and s2. Two types of queries are defined for this queue:
+
+(i) 1 x: This type of query indicates pushing element 'x' into the queue.
+
+(ii) 2: This type of query indicates popping an element from the queue and printing the popped element. If there is no element in the queue, return -1.
+
+Write a function or algorithm to efficiently implement the described queue using two stacks.
+
+Example:
+
+Input:
+
+1 5
+
+1 10
+
+2
+
+1 7
+
+2
+
+Output:
+
+5
+
+10
+
+Explanation:
+
+- The first query (1 5) pushes 5 into the queue.
+
+- The second query (1 10) pushes 10 into the queue.
+
+- The third query (2) pops the front element (5) from the queue and prints it.
+
+- The fourth query (1 7) pushes 7 into the queue.
+
+- The fifth query (2) pops the front element (10) from the queue and prints it.
+
+Question 14:
+Given N elements, your objective is to implement a stack in such a way that you can retrieve the minimum element in O(1) time.
+
+Write a function or algorithm to efficiently implement this stack.
+
+Example:
+
+Input:
+
+Push 3
+
+Push 5
+
+Get Minimum  // Output: 3
+
+Push 2
+
+Get Minimum  // Output: 2
+
+Pop
+
+Get Minimum  // Output: 3
+
+Explanation:
+
+- The first query pushes 3 into the stack.
+
+- The second query pushes 5 into the stack.
+
+- The third query retrieves the minimum element, which is 3.
+
+- The fourth query pushes 2 into the stack.
+
+- The fifth query retrieves the minimum element, which is now 2.
+
+- The sixth query pops an element from the stack.
+
+- The seventh query retrieves the minimum element, which is 3.
+
+Question 15:
+You are provided with an input stream A consisting of n characters, where each character is a lowercase alphabet. While reading characters from the stream, your task is to identify, for each position i (0 ≤ i < n), the first character that appears only once in the stream up to that point. If there are multiple characters that have appeared only once, you should identify the first one among them. If there is no such character, append '#' to the answer.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input: Stream: "abacabad"
+
+Output: "abbdddc"
+
+Explanation:
+
+- For position 0: 'a' is the first character, so 'a' is the answer.
+
+- For position 1: 'b' is the first character, so 'b' is the answer.
+
+- For position 2: 'a' appears twice, so 'b' is the first non-repeating character.
+
+- For position 3: 'c' is the first character, so 'c' is the answer.
+
+- For position 4: 'a' appears twice, so 'c' is the first non-repeating character.
+
+- For position 5: 'b' appears twice, so 'c' is the first non-repeating character.
+
+- For position 6: 'a' appears twice, so 'c' is the first non-repeating character.
+
+- For position 7: 'd' is the first character, so 'd' is the answer.
+
+Question 16:
+Consider an array arr[] of size N and an integer K. Your task is to determine the maximum value for each contiguous subarray of size K.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input:
+
+Array: [1, 3, 4, 2, 6, 7]
+
+K: 3
+
+Output:
+
+Maximum Values: [4, 4, 6, 7]
+
+Explanation:
+
+- For the first contiguous subarray [1, 3, 4], the maximum value is 4.
+
+- For the second contiguous subarray [3, 4, 2], the maximum value is 4.
+
+- For the third contiguous subarray [4, 2, 6], the maximum value is 6.
+
+- For the fourth contiguous subarray [2, 6, 7], the maximum value is 7.
+
+Question 17:
+Consider a grid of dimension nxm where each cell can have values 0, 1, or 2, with the following interpretations:
+
+0: Represents an empty cell.
+
+1: Represents a cell with fresh oranges.
+
+2: Represents a cell with rotten oranges.
+
+Your task is to determine the earliest time after which all the oranges in the grid will be rotten. A rotten orange at index [i, j] can rot other fresh oranges at indexes [i-1, j], [i+1, j], [i, j-1], [i, j+1] (up, down, left, and right) in unit time.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input:
+
+Grid:
+
+[[2, 1, 0],
+
+[1, 1, 1],
+
+[0, 1, 2]]
+
+Output:
+
+Earliest Time: 4
+
+Explanation:
+
+After 4 units of time, all the oranges in the grid will be rotten.
+
+Question 18:
+You are given an array Arr[] of N integers. Your task is to identify the contiguous sub-array (containing at least one number) with the maximum sum and return its sum.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input:
+
+Array: [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+
+Output:
+
+Maximum Sum: 6
+
+Explanation:
+
+The contiguous sub-array [4, -1, 2, 1] has the maximum sum, which is 6.
+
+Question 19:
+Consider an array of size N-1 containing distinct integers in the range of 1 to N. Your task is to find the missing element in the array.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input: Array: [1, 2, 4, 6, 3, 7, 8]
+
+Output: Missing Element: 5
+
+Explanation: The missing element in the array is 5.
+
+Question 20:
+You are provided with a sorted array of positive integers. Your objective is to rearrange the array elements alternatively, such that the first element is the maximum value, the second is the minimum value, the third is the second maximum, the fourth is the second minimum, and so on. It is crucial to modify the original array itself without using any extra space.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input: Sorted Array: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Output: Modified Array: [9, 1, 8, 2, 7, 3, 6, 4, 5]
+
+Explanation: The original array is rearranged alternatively as described.
+
+Question 21:
+You are provided with an array of integers. Your task is to find the Inversion Count in the array.
+
+Inversion Count indicates how far (or close) the array is from being sorted. If the array is already sorted, the inversion count is 0. In the case of a completely reversed array, the inversion count is the maximum. Formally, two elements a[i] and a[j] form an inversion if a[i] > a[j] and i < j.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input: Array: [2, 4, 1, 3, 5]
+
+Output: Inversion Count: 3
+
+Explanation: The inversions in the array are (2, 1), (4, 1), and (4, 3), resulting in a total inversion count of 3.
+
+Question 22:
+Consider an array A of n positive numbers. Your objective is to find the first equilibrium point in the array. An equilibrium point is an index (or position) such that the sum of all elements before that index is the same as the sum of elements after it. Return the equilibrium point in 1-based indexing. If no equilibrium point exists, return -1.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input: Array: [1, 3, 5, 2, 2]
+
+Output: Equilibrium Point: 3
+
+Explanation:
+
+The equilibrium point is at index 3 (1-based), where the sum of elements before (1+3) is equal to the sum of elements after (2+2).
+
+Question 23:
+You are given an array A of positive integers. Your goal is to find the leaders in the array. An element in the array is considered a leader if it is greater than or equal to all the elements to its right side. The rightmost element is always considered a leader.
+
+Write a function or algorithm to efficiently solve this problem.
+
+Example:
+
+Input: Array: [16, 17, 4, 3, 5, 2]
+
+Output: Leaders: [17, 5, 2]
+
+Explanation:
+
+The leaders in the array are 17 (greater than all elements to its right), 5 (greater than 2 to its right), and 2 (rightmost element).
+
+Question 24:
+Write a function that takes a list sorted in non-decreasing order and deletes any duplicate nodes from the list. The list should only be traversed once. 
+
+For example if the linked list is 11->11->11->21->43->43->60 then removeDuplicates() should convert the list to 11->21->43->60. 
+
+Question 25:
+Given a doubly linked list, devise a function to perform an ascending order sort on the elements using the merge sort algorithm. Implement the necessary steps to ensure the resulting doubly linked list is in increasing order. As an example, demonstrate the transformation of a given doubly linked list into the sorted form, e.g., {2, 4, 8, 10}. Provide the algorithm and steps involved in the sorting process.
+
+Question 26:
+You have been given a string S of length N. The given string is a binary string which consists of only 0’s and ‘1’s. Ugliness of a string is defined as the decimal   number that this binary string represents.
+
+Example:
+
+“101” represents 5.
+
+“0000” represents 0.
+
+“01010” represents 10.
+
+Question 27:
+Khaled has an array A of N elements. It is guaranteed that N is even. He wants to choose at most N/2 elements from array A. It is not necessary to choose consecutive elements.  Khaled is interested in XOR of all the elements he chooses. Here, XOR denotes the bitwise XOR operation. 
+
+Example:
+
+If A=[2,4,6,8], then khaled can choose the subset [2,4,8] to achieve XOR=(2 XOR 4 XOR 8)=14.
+
+Khaled wants to maximize the XOR of all the elements he chooses. Your task is to help khaled to find the max XOR of a subset that he can achieve by choosing at most N/2 elements?
+
+Question 28:
+Given a tree consisting of n vertices, each vertex is either colored black or white. The task is to compute for each vertex v, the maximum difference between the number of white and the number of black vertices if a subtree of the given tree is chosen that contains the vertex v.
+
+Example:
+
+Input: n = 9, color = { 0, 1, 1, 1, 0, 0, 0, 0, 1 }, edges = { { 1, 2 }, { 1, 3 }, { 3, 4 }, { 3, 5 }, { 2, 6 }, { 4, 7 }, { 6, 8 }, { 5, 9 } }
+
+Output: 2 2 2 2 2 1 1 0 2
+
+Input: n = 4, color = { 0, 0, 1, 0}, edges = {{1, 2}, {1, 3}, {1, 4}}
+
+Output: 0 -1 1 -1
+
+Question 29:
+Create a function that takes an array A[] composed of only 0s, 1s, and 2s. The goal is to sort the array such that all 0s appear first, followed by all 1s, and finally, all 2s. Implement the function to achieve this specific ordering of elements in the array.
+
+Example:
+
+Input: {0, 1, 2, 0, 1, 2}
+
+Output: {0, 0, 1, 1, 2, 2}
+
+Input: {0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1}
+
+Output: {0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2}
+
+Question 30:
+Consider a string array S and the objective is to determine the lexicographically smallest string that can be constructed by selecting a single character from each string in the array S. Formulate the steps or algorithm to find this lexicographically smallest string based on the given criteria
+
+Example:
+
+Input: S = [“xy”, “fd”]
+
+Output: “dx”
+
+Explanation: The possible strings formed by extracting a single character from each string are [“xf”, “fx”, “xd”, “dx”, “yf”, “fy”, “yd”, “dy”]. The lexicographically smallest string obtained is “dx”.
+
+
+
+Questions:
+
+Introduce yourself.
+Write a query to find the maximum and minimum salary in the table.
+What is RDBMS?
+What is a palindrome?
+What are the four pillars of OOPS?
+Describe your most recent project.
+Why did you decide to work with Deep Learning?
+Which technologies do you enjoy working with?
+Have you done any external certifications in any technologies?
+
+
+
+
+Questions:
+
+Please introduce yourself.
+What is the difference between C and C++?
+Explain the types of inheritance.
+How can you differentiate between a while loop and a do while loop?
+You have attended an internship recently. What were the key elements you took away from this internship?
+What are your weaknesses?( I told working under extreme pressure)
+If you are in a situation where you have to finish multiple tasks within a short deadline, will you be able to handle it? What will you do?
+How quickly can you learn a new technology?
+We can sometimes have night shifts in our company. Would you be comfortable with that?
+Are you willing to sign a bond with us?
+Any questions for me?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

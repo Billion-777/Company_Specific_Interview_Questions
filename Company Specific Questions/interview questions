@@ -1,0 +1,570 @@
+
+Problem Statement
+
+As you set out on an adventure to explore a mysterious box, containing n enchanted compartments to lead you to a treasure, you encounter a peculiar challenge. At each move, you can choose to advance by opening 1 or 2 compartments.
+
+
+
+Your mission is to decipher the total count of distinct ways to reach the nth compartment of this enigmatic box.
+
+
+
+Input Format
+
+The first line contain a single integer n representing number of enchanted compartments
+
+
+
+Output Format
+
+Print a single integer that denotes the total count of distinct ways to reach the nth compartment of this enigmatic box.
+
+
+
+Constraints
+
+1 <= n <= 45
+
+
+
+Sample Testcase 0
+
+Testcase Input
+
+4
+
+Testcase Output
+
+5
+
+Explanation
+
+There are five ways to climb to the top.
+
+
+
+
+
+1. 1 compartment + 1 compartment + 1 compartment + 1 compartment or as [1,1,1,1]
+
+2. [1,1,2]
+
+3. [1,2,1]
+
+4. [2,1,1]
+
+5. [2,2]
+
+
+
+
+
+
+
+ 
+
+
+
+Sample Testcase 1
+
+Testcase Input
+
+5
+
+Testcase Output
+
+8
+
+Explanation
+
+There are eight ways to climb to the top.
+
+
+
+
+
+1. 1 compartment + 1 compartment + 1 compartment + 1 compartment + 1 compartment or as [1,1,1,1,1]
+
+2. [1,1,1,2]
+
+3. [2,1,1,1]
+
+4. [1,2,1,1]
+
+5. [1,1,2,1]
+
+6. [2,2,1]
+
+7. [2,1,2]
+
+8. [1,2,2]
+
+
+
+in java(openjdk1.7.0_91)
+
+```java
+import java.util.Scanner;
+
+public class EnchantedBox {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+
+        int[] dp = new int[n + 1];
+        dp[0] = 1;
+        dp[1] = 1;
+
+        for (int i = 2; i <= n; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+
+        System.out.println(dp[n]);
+    }
+}
+```
+
+**Explanation:**
+
+This code solves the problem using dynamic programming. The `dp` array stores the number of ways to reach the `i`-th compartment.
+
+1. **Base Cases:**
+   - `dp[0] = 1`: There is one way to reach the 0th compartment (do nothing).
+   - `dp[1] = 1`: There is one way to reach the 1st compartment (take one step).
+
+2. **Dynamic Programming:**
+   - For each compartment `i` (starting from the 2nd), the number of ways to reach it is the sum of the ways to reach the previous two compartments:
+     - `dp[i] = dp[i - 1] + dp[i - 2]`
+     - This is because we can either take one step from the (i-1)th compartment or two steps from the (i-2)th compartment.
+
+3. **Final Result:**
+   - After calculating the values for all compartments, `dp[n]` will store the total number of ways to reach the nth compartment.
+
+This dynamic programming approach efficiently calculates the solution by avoiding redundant calculations and ensuring an optimal solution.
+
+
+
+
+
+
+
+
+
+
+Ram is given a sequence of numbers by the wizard Betaal. To free himself from the wizard's spell, Ram must sort this sequence and then concatenate the sorted sequence with itself.
+
+Your task is to help Ram by performing the required operations and generating the final sequence.
+
+Input Format
+The first line contains an integer N, representing the number of elements.
+
+The second line contains N space separated integers a1,a2,a3….an.
+
+Output Format
+The output is a sequence that consists of the sorted sequence concatenated with itself, as described in the problem.
+
+Constraints
+1 <= N <= 10^6
+
+1 <= Ai <=10^6
+
+Sample Testcase 0
+Testcase Input
+3
+1 2 1
+Testcase Output
+1 1 2 1 1 2 
+Explanation
+In the sample case we have first sorted the sequence 1 2 1 -> 1 1 2 and then concatenated that with itself.
+Sample Testcase 1
+Testcase Input
+4
+1 2 2 3 
+Testcase Output
+1 2 2 3 1 2 2 3 
+Explanation
+In the sample case we have first sorted the sequence 1 2 2 3 -> 1 2 2 3 and then concatenated that with itself.
+
+
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class SortAndConcatenate {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+
+        int[] arr = new int[N];
+        for (int i = 0; i < N; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        // Sort the array
+        Arrays.sort(arr);
+
+        // Concatenate the sorted array with itself
+        for (int i = 0; i < 2 * N; i++) {
+            System.out.print(arr[i % N] + " ");
+        }
+    }
+}
+
+
+
+
+
+Problem Statement
+A string is called lucky if it does not contain an unlucky substring in it. You are given a string S and an unlucky string U.
+
+Your task is to remove all occurrences of the unlucky string from S. So, that the string S can become a lucky one..
+
+A substring is a contiguous sequence of characters in a string.
+
+Input Format
+The first line will contain a string S representing the Input String which needs to be made lucky.
+
+The second line will contain a string U representing the Unlucky String.
+
+Output Format
+Print a single string which is a subsequence of String S and it is a Lucky String.
+
+Constraints
+1 ≤ S ≤ 106
+
+1 ≤ U ≤ 106
+
+Sample Testcase 0
+Testcase Input
+daabcbaabcbc
+abc
+Testcase Output
+dab
+Explanation
+The following operations are done: - S = "daabcbaabcbc", remove "abc" starting at index 2, so S = "dabaabcbc". - S = "dabaabcbc", remove "abc" starting at index 4, so S = "dababc". - S = "dababc", remove "abc" starting at index 3, so S = "dab".
+
+
+Now S has no occurrences of "abc".
+
+
+import java.util.Scanner;
+
+public class LuckyString {
+    public static String removeUnluckySubstring(String s, String u) {
+        StringBuilder result = new StringBuilder();
+        int uLength = u.length();
+
+        for (int i = 0; i < s.length(); i++) {
+            result.append(s.charAt(i));
+
+            // Check if the end of the result matches the unlucky string
+            if (result.length() >= uLength && result.substring(result.length() - uLength).equals(u)) {
+                // Remove the unlucky string from the end of the result
+                result.delete(result.length() - uLength, result.length());
+            }
+        }
+
+        return result.toString();
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input strings
+       
+        String s = scanner.nextLine();
+
+        
+        String u = scanner.nextLine();
+
+        // Get the lucky string after removal
+        String luckyString = removeUnluckySubstring(s, u);
+
+        // Output the result
+        System.out.println(luckyString);
+    }
+}
+
+
+
+
+
+
+
+ohn Wick, our favorite character, wants to learn skydiving. Before attempting the real thing, he plans to practice by jumping off floors in his apartment building. The building has n floors, and he has k parachutes. When John throws a parachute from a certain floor, there are two possible outcomes: either the parachute fails, or he successfully lands.
+
+Your task is to determine the minimum number of attempts John needs to make in order to successfully land on a floor while using the fewest possible parachutes.
+
+Input Format
+The first line  contains 2 integers n and k denoting the number of floors and number of parachutes respectively.
+
+Output Format
+The output contains a single integer denoting the minimum number of attempts needed to successfully perform the task.
+
+Constraints
+0<=n<=10^3
+
+0<=n<=5*10
+
+Sample Testcase 0
+Testcase Input
+2 2 
+Testcase Output
+2
+Explanation
+The first parachute can be dropped from level 1 while the second parachute may be dropped from floor 2. We know that f = 0 if the first parachute cracks. We know that f = 1 if the second parachute cracks but the first parachute does not. Otherwise, we know that f = 2 if both parachutes survive.
+Sample Testcase 1
+Testcase Input
+100 2
+Testcase Output
+14
+Explanation
+One good method is to drop the first parachute on the ninth floor. We know f is between 0 and 8 if it breaks. Drop the second parachute beginning on level 1 and working your way up one by one until you reach floor 8, where you'll discover f. The total number of droplets is 1 + 8 = 9.
+- If the first parachute does not fail, drop it on floor 22 again. We know f is between 9 and 21 if it breaks. Drop the second parachute beginning on level 10 and work your way up one by one to locate f within 12 drops. The total number of drops is 2 + 12 = 14.
+- If the first parachute does not break, repeat steps 34, 45, 55, 64, 72, 79, 85, 90, 94, 97, 99, and 100, dropping the first egg from floors 34, 45, 55, 64, 72, 79, 85, 90, 94, 97, 99, and 100.
+It takes at most 14 drops to determine f, regardless of the result.
+
+
+
+
+import java.util.Scanner;
+
+public class SkydivingAttempts {
+
+    
+    public static int findMinAttempts(int n, int k) {
+        
+        int[][] dp = new int[k + 1][n + 1];
+
+     
+        for (int i = 1; i <= k; i++) {
+            dp[i][0] = 0;
+            dp[i][1] = 1;
+        }
+        for (int j = 1; j <= n; j++) {
+            dp[1][j] = j; 
+        }
+
+        for (int i = 2; i <= k; i++) {
+            for (int j = 2; j <= n; j++) {
+                dp[i][j] = Integer.MAX_VALUE;
+                for (int x = 1; x <= j; x++) {
+                    int attempts = 1 + Math.max(dp[i - 1][x - 1], dp[i][j - x]);
+                    dp[i][j] = Math.min(dp[i][j], attempts);
+                }
+            }
+        }
+
+        
+        return dp[k][n];
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+       
+       
+        int n = scanner.nextInt();
+        int k = scanner.nextInt();
+        
+        
+        int result = findMinAttempts(n, k);
+        
+       
+        System.out.println(result);
+    }
+}
+
+
+
+
+
+
+
+On a long, straight road, there are N poles of different heights. A monkey is sitting on the top of each pole, facing in the direction of the next pole. A monkey can see another monkey sitting in front of it if the heights of all the poles between them are strictly less than the heights of both of their poles.
+
+More formally, the ith monkey can see the jth monkey if i < j and min(heights[i], heights[j]) > max(heights[i+1], heights[i+2], ..., heights[j-1]).
+
+Find the number of monkeys that each monkey can see sitting on top of his pole, looking towards the next pole or in the right direction.
+
+Input Format
+The first line of the input contains a single integer N, representing the number of poles on the road.
+
+The second line contains N positive integers, where the i-th integer represents the height of the i-th pole.
+
+Output Format
+Print N space-separated integers, where the ithinteger represents the number of monkeys that can be seen by the monkey sitting on the ith pole.
+
+Constraints
+1 <= N <= 10^5
+
+1 <= height[i] <= 10^5
+
+Sample Testcase 0
+Testcase Input
+6
+10 6 8 5 11 9
+Testcase Output
+3 1 2 1 1 0
+
+Explanation
+The monkey at pole 1 can see monkeys at poles 2, 3, and 5. 
+The monkey at pole 2 can see the monkey at pole 3. 
+The monkey at pole 3 can only see the monkey at pole 4 and 5. 
+The monkey at pole 4 can only see the monkey at pole 5. 
+The monkey at pole 5 can only see the monkey at pole 6. 
+The monkey at pole 6 cannot see any other monkey in front of it, as there is no pole in front of him.
+
+Sample Testcase 1
+Testcase Input
+5
+5 1 2 3 10
+Testcase Output
+4 1 1 1 0
+Explanation
+The monkey at pole 1 can see all other monkeys. 
+The monkey at pole 2 can only see the monkey at pole 3. 
+The monkey at pole 3 can only see the monkey at pole 4. 
+The monkey at pole 4 can only see the monkey at pole 5. 
+The monkey at pole 5 cannot see any other monkey in front of it, as there is no pole in front of him.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void findVisibleMonkeys(int* heights, int n) {
+    // Array to store the number of visible monkeys for each pole
+    int* result = (int*)malloc(n * sizeof(int));
+    
+    // Stack to store the indices of the poles in a decreasing height order
+    int* stack = (int*)malloc(n * sizeof(int));
+    int stackTop = -1;  // Initialize the stack to be empty
+
+    // Initialize the result array to 0
+    for (int i = 0; i < n; i++) {
+        result[i] = 0;
+    }
+
+    // Traverse each pole from right to left
+    for (int i = n - 1; i >= 0; i--) {
+        // Count how many poles the current pole can see
+        while (stackTop >= 0 && heights[stack[stackTop]] < heights[i]) {
+            result[i]++;
+            stackTop--;
+        }
+
+        // If the stack is not empty, the current monkey can see the monkey at the top of the stack
+        if (stackTop >= 0) {
+            result[i]++;
+        }
+
+        // Push the current pole index onto the stack
+        stack[++stackTop] = i;
+    }
+
+    // Print the result array as space-separated values
+    for (int i = 0; i < n; i++) {
+        printf("%d", result[i]);
+        if (i < n - 1) {
+            printf(" ");
+        }
+    }
+    printf("\n");
+
+    // Free dynamically allocated memory
+    free(result);
+    free(stack);
+}
+
+int main() {
+    int n;
+    
+    // Read the number of poles
+    scanf("%d", &n);
+    
+    // Read the heights of the poles
+    int* heights = (int*)malloc(n * sizeof(int));
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &heights[i]);
+    }
+
+    // Call the function to find visible monkeys
+    findVisibleMonkeys(heights, n);
+
+    // Free dynamically allocated memory
+    free(heights);
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
